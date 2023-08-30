@@ -8,5 +8,6 @@ class CustomColors {
   static const Color subTabLineColor = Color(0xFFA9B4BC);
   static const Color btnBGColor = Color(0xFFFAFBFD);
   static const Color btnTextColor = Color(0xFF1E222B);
+  static const Color dashboardBackgroud = Color(0xFFFFFFFF);
   
 }

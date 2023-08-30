@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mini_project/controller/HomeController.dart';
 
-import '../constants/custom_colors.dart';
+import '/constants/custom_colors.dart';
 
 class MyHomePage2 extends StatefulWidget {
   const MyHomePage2({super.key, required this.title});
@@ -32,6 +32,7 @@ class _MyHomePage2State extends State<MyHomePage2> {
           subTabLineClr: CustomColors.tabLineColor,
           subTabLineWdt: 40,
           mainImage: 'assets/jpg_images/Image_Icon.jpg',
+          navigateRouteScreen: '/dashboard',
         ),
       ),
     );

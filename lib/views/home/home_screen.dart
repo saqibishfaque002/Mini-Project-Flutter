@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mini_project/controller/HomeController.dart';
 
-import '../constants/custom_colors.dart';
+import '/constants/custom_colors.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});

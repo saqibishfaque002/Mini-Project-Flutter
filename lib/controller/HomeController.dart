@@ -43,7 +43,6 @@ class homeContent extends StatelessWidget {
             Stack(
               children: [
                 Container(
-                  height: 200,
                   width: screenWidth,
                   child: Text(
                     mainText,
@@ -56,11 +55,9 @@ class homeContent extends StatelessWidget {
                   ),
                 ),
                 Positioned(
-                  bottom: 13,
+                  bottom: 7,
                   left: 80,
                   child: Container(
-                    margin: EdgeInsets.only(bottom: 0),
-                    // width: screenWidth,
                     child: Image(
                       width: 20,
                       image: AssetImage(mainTextImg),
