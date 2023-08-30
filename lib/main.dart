@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:mini_project/views/home_screen2.dart';
+import 'package:mini_project/views/splash.dart';
 
 import 'views/home_screen.dart';
 
@@ -18,7 +20,16 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      // home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: SplashScreen(), // Show splash screen first
+      routes: {
+        '/home': (context) => MyHomePage(
+              title: '',
+            ),
+        '/home2': (context) => MyHomePage2(
+              title: '',
+            ),
+      },
     );
   }
 }

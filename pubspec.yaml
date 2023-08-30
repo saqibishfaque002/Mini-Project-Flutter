@@ -63,6 +63,7 @@ flutter:
     - assets/jpg_images/Emoji.jpg
     - assets/jpg_images/Image_Icon.jpg
     - assets/jpg_images/Image Icon.png
+    - assets\jpg_images\ArrowRight.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
