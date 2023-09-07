@@ -42,31 +42,44 @@ class homeContent extends StatelessWidget {
           children: [
             Stack(
               children: [
-                Container(
+                SizedBox(
+                  height: MediaQuery.of(context).size.height * 0.25,
                   width: screenWidth,
-                  child: Text(
-                    mainText,
-                    style: TextStyle(
-                        fontSize: 30,
-                        fontFamily: 'Manrope',
-                        fontWeight: FontWeight.w700,
-                        color: CustomColors.fontColor,
-                        height: 1.3),
-                  ),
-                ),
-                Positioned(
-                  bottom: 7,
-                  left: 80,
-                  child: Container(
-                    child: Image(
-                      width: 20,
-                      image: AssetImage(mainTextImg),
-                    ),
+                  child: PageView(
+                    scrollDirection: Axis.horizontal,
+                    children: [
+                      Stack(
+                        children: [
+                          Container(
+                            width: screenWidth,
+                            child: Text(
+                              mainText,
+                              style: TextStyle(
+                                  fontSize: 30,
+                                  fontFamily: 'Manrope',
+                                  fontWeight: FontWeight.w700,
+                                  color: CustomColors.fontColor,
+                                  height: 1.3),
+                            ),
+                          ),
+                          Positioned(
+                            bottom: 12,
+                            left: 80,
+                            child: Container(
+                              child: Image(
+                                width: 20,
+                                image: AssetImage(mainTextImg),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
                   ),
                 ),
               ],
             ),
-            Container(
+            SizedBox(
               height: 100,
               width: screenWidth,
               child: Text(
@@ -126,6 +139,14 @@ class homeContent extends StatelessWidget {
                   // Navigator.pushNamed(context, '/home2');
                   Navigator.pushNamed(context, navigateRouteScreen);
                 },
+                style: ElevatedButton.styleFrom(
+                  elevation: 5, // Elevation
+                  padding: EdgeInsets.all(15), // Padding
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10), // BorderRadius
+                    // You can also use other shape options like BeveledRectangleBorder, StadiumBorder, etc.
+                  ),
+                ),
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
