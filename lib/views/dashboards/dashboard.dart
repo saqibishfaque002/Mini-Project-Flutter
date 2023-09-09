@@ -16,9 +16,14 @@ class Dashboard extends StatelessWidget {
           child: Column(
             children: [
               Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.only(
+                      bottomLeft: Radius.circular(25),
+                      bottomRight: Radius.circular(25)),
+                  color: CustomColors.maineColor,
+                ),
                 width: screenWidth,
-                height: 200 * MediaQuery.of(context).devicePixelRatio,
-                color: CustomColors.maineColor,
+                height: screenHeight * 0.3,
                 child: Padding(
                   padding: EdgeInsets.all(20),
                   child: Column(

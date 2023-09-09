@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:mini_project/views/dashboards/dashboard.dart';
 import 'views/home/home_screen2.dart';
 import 'views/home/home_screen.dart';
-import 'package:mini_project/views/splash.dart';
-
+import 'package:mini_project/views/splash/splash.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner:false,
+      debugShowCheckedModeBanner: false,
       title: 'Mini Project',
       theme: ThemeData(
         useMaterial3: true,
