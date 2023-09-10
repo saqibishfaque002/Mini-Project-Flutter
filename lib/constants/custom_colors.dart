@@ -9,5 +9,7 @@ class CustomColors {
   static const Color btnBGColor = Color(0xFFFAFBFD);
   static const Color btnTextColor = Color(0xFF1E222B);
   static const Color dashboardBackgroud = Color(0xFFFFFFFF);
-  
+  static const Color seachBarBG = Color(0xFF153075);
+  static const Color seachBarText = Color(0xFF8891A5);
+  static const Color giftColor = Color(0xFFF9B023);
 }
